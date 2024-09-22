@@ -1,0 +1,764 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Barlow+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Oswald:wght@200..700&display=swap');
+
+:root{
+    --bg-color:#121212;
+    --primary-color:#191919;
+    --font-color:white;
+    --title-font-size:38px;
+    --title-font-weight:600;
+    --title-line-height:56.32px;
+    --title-letter-specicng:7%;
+
+    --summary-font-size:16px;
+    --summary-font-weight:400;
+    --summary-line-height:23.71px;
+    
+}
+*{
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0px;
+   
+}
+body{
+
+    background-color: var(--bg-color);
+    outline: none;
+
+}
+a{
+    text-decoration: none;
+    display: inline-block;
+}
+ul{
+    list-style: none;
+}
+img{
+    display: inline-block;
+}
+.container{
+    max-width: 1320px;
+    margin: 0px auto;
+}
+i{
+    display: inline-block;
+}
+.contentTitle{
+    font-size: var(--title-font-size);
+    font-weight: var(--title-font-weight);
+    line-height: var(--title-line-height);
+    letter-spacing: var(--title-letter-specicng);
+    color: var(--font-color);
+    font-family: Oswald;
+    padding: 0;
+    margin: 000000000000000;
+}
+.summary{
+    font-size: var(--summary-font-size);
+    font-weight: var(--summary-font-weight);
+    line-height: var(--summary-line-height);
+    letter-spacing: var(--summary-letter-specicng);
+    color: var(--font-color);
+    font-family: Oswald;
+
+}
+
+/* --------------NavBar style css seectiion-------------  */
+#navBar{
+    background-color: transparent;
+    padding: 11px 0px;
+    position: absolute;
+    width: 100%;
+    margin-top: 25px;
+}
+.navBarWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navBarWrapperLeft{
+    display: flex;
+    flex-direction: row;
+    column-gap: 60px;
+    align-items: center;
+}
+.navBarWrapperLeft__ul{
+    display: flex;
+    flex-direction: row;
+    column-gap: 30.01px;
+    color: #DDDDDD;
+}
+.navBarWrapperLeft__ul a{
+    font-family: Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.71px;
+    color: #DDDDDD;
+}
+.navBarWrapperRight{
+    display: flex;
+    flex-direction: row;
+    column-gap: 25.6px;
+    justify-content: space-between;
+    align-items: center;
+}
+.global,.signOut,.search{
+    color: white;
+    font-size: 25px;
+}
+.signOut{
+    font-size: 10.71px;
+    padding-right: 7px;
+}
+
+/* --------------NavBar style css seectiion-------------  */
+
+/* --------------Banner style css seectiion-------------  */
+#banner{
+    background: url(/images/banner/banner\ 1\ \(1\).png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+ 
+}
+.bannerWrapper{
+    max-width: 611px;
+    padding-top: 337px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 18px;
+}
+.banner__subTitle{
+    font-family: Oswald;
+    font-size: 27px;
+    font-weight: 400;
+    line-height: 40.01px;
+    letter-spacing: 10%;
+    color: var(--font-color);
+}
+.banner__heading{
+    font-family: Oswald;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 88.92px;
+    color: var(--font-color);
+}
+.heading_downLine{
+    display: inline-block;
+    width: 90px;
+    height: 4px;
+    border: 4px solid rgb(255, 0, 0);
+    margin-left:10px;
+}
+.banner__Button{
+    padding:13px 16px 16px 24px;
+    background-color: var(--font-color);
+    margin: 30px 0px 301px 0px;
+    max-width: 138px;
+    color: var(--primary-color);
+    border: none; 
+    transition: all linear 0.5s;
+    font-family: Oswald;
+
+}
+.banner__Button:hover{
+    border-top-left-radius: 90px 50px;
+    border-bottom-right-radius: 90px 50px;
+    background-color: red;
+    color: white;
+   
+}
+.right-arrow{
+    display: inline-block;
+    font-size: 13px;
+    color: var(--primary-color);
+}
+.bannerIcon{
+    display: flex;
+    flex-direction: row;
+    column-gap:28px;
+    padding-bottom: 103px;
+}
+.bannerIcon>a{
+    width: 35px;
+    height: 35px;
+    background-color:#D9D9D9 ;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all ease-in-out 0.5s;
+}
+.bannerIcon>a:hover{
+   background-color: blueviolet;
+   transform: translateY(-20%);
+   color: white;
+}
+.bannerIcon>i{
+  font-size: 20px;
+}
+/* --------------Banner style css seectiion-------------  */
+
+/* --------------Community style css seectiion-------------  */
+#community{
+    padding: 34px 0px 81px 0px;
+    background-color: var(--bg-color);
+   
+}
+.communityWrapper{
+    display: flex;
+    flex-direction: column;
+    row-gap:50px ;
+}
+.communityWrapperTop{
+    max-width: 518px;
+}
+.title_downLine{
+    display: inline-block;
+    width: 120px;
+    height: 2px;
+    border: 2px solid #FF4655;
+    padding-left:10px;
+}
+.communityWrapperLeftImg{
+    display: inline-block;
+    max-width: 708px;
+    border-radius: 0px, 0px, 65px, 0px;
+}
+.communityWrapperMiddle{
+   
+    margin: 0px;
+    padding: 0px;
+    display: flex;
+    flex-direction: row;
+    column-gap: 82px;
+    
+  
+}
+.communityWrapperRight__title{
+    font-family: Oswald;
+    font-size: 27px;
+    font-weight: 600;
+    line-height: 40.01px;
+    color: var(--font-color);
+    letter-spacing: 3%;
+}
+.communityWrapperRightUl{
+    max-width:468px ;
+    height: 403px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 10px;
+    color: white;
+    font-family: Barlow Condensed;
+}
+[class="fa-duotone fa-solid fa-check"]{
+    color: red;
+    padding-right: 5px;
+}
+.modifiedBtn{
+    background-color:rgb(33,33,33);
+    color: white;
+}
+.modifiedBtn> .right-arrow{
+    color: white;
+}
+.communityWrapperBottom{
+    margin-top: 0px;
+    padding-top: 0px;
+    display: flex;
+   justify-content: space-between;}
+.communityWrapperBottomCard{
+    max-width: 315px;
+    padding: 26px 95px;
+    background-color: rgb(33,33,33);
+    border-radius: 0px, 50px, 0px, 50px;
+    border-top-right-radius:  50px;
+    border-bottom-left-radius:  50px;
+}
+.communityWrapperBottomCard__title{
+    font-family: Barlow Condensed;
+    font-size: 60px;
+    font-weight: 600;
+    line-height: 72px;
+    letter-spacing: 3%;
+    color: var(--font-color);
+}
+.communityWrapperBottomCard__summary{
+    font-family: Oswald;
+    font-size: 18px;
+    font-weight: 300;
+    line-height: 26.8px;
+    letter-spacing: 2%;
+    color: var(--font-color);
+}
+.round{
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #FF4655;
+    border-radius: 50%;
+}
+
+/* --------------Community style css seectiion-------------  */
+
+/* --------------Popular Games style css seectiion-------------  */
+#popularGames{
+    padding: 90px 0px; 
+    background-color: #191919;
+   
+}
+.popularGamesWrapperTop{
+
+   width:470px;
+   margin-left:65%; 
+   padding-bottom:80px ;
+   text-align-last: right;
+ 
+  
+}
+.popularGamesWrapper{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.popularGamesWrapperLeft{
+    position: relative;
+    width: 651px;
+    height: 390px;
+    background-color: #FF4655;
+    transform: skewX(-20deg);
+}
+.popularGamesWrapperLeft__img{
+    position:absolute;
+    bottom: 0%;
+    left: 20%;
+    width: 493px;
+    height: 605px;
+}
+.popularGamesWrapperRight{
+    max-width: 651px;
+    height: 400px;
+    position: relative;
+}
+.gameIcon{
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    right: 25px;
+    bottom: 20px;
+}
+.gameIcon a{
+    width: 40px;
+    height: 40px;
+    border-radius: 50px;
+    border: 1px solid var(--font-color);
+    text-align: center;
+    line-height: 40px;
+}
+.gameIcon i{
+    color: var(--font-color);
+   
+}
+/* --------------Popular Games style css seectiion-------------  */
+
+/* --------------Live  Video style css seectiion-------------  */
+#liveVideo{
+    padding: 90px 0px;
+}
+.liveVideoWrapperTop{
+    max-width:446px ;
+    margin-bottom: 70px;
+}
+.liveVideoWrapperMiddle{
+    display: flex;
+    justify-content:space-between ;
+    align-items: center;
+}
+.videoCard01{
+    background: url(/images/liveVideo/tour-1\ 1.png);
+    width: 426px;
+    height: 295px;
+    padding:103px,179px; 
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition:all .7s ease-in-out;
+}
+.videoCard01:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(50px);
+    mix-blend-mode: luminosity;
+   
+}
+.videoIcon{
+    position: relative;
+}
+
+.videoIcon i{
+    color: var(--font-color);
+    position: absolute;
+    left: 50%;
+    line-height: 295px;
+    transform: translateX(-50%);
+    font-size:50px ;
+}
+.videoCardContentLef__title{
+    font-size: 22px;
+    font-weight: 600;
+    line-height:26.4px;
+    font-family: Barlow Condensed;
+    color: var(--font-color);
+}
+.videoCardBottom{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 210px 25px 10px 25px ;
+}
+.vidoeRound{
+    display: inline-block;
+    margin-left: 5px;
+    width: 12px;
+    height: 12px;
+    background-color: #FF4655 !important; 
+    border-radius: 50%;
+}
+.videoCard02{
+    background: url(/images/liveVideo/tour-2\ 1.png);
+    width: 426px;
+    height: 295px;
+    padding:103px,179px; 
+    cursor: pointer;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    transition: ease-out 0.6s;
+}
+.videoCard02:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(50px);
+    mix-blend-mode: luminosity;
+    
+    mix-blend-mode: luminosity;
+   
+}
+.videoCard03{
+    background: url(/images/liveVideo/tour-3\ 1.png);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 426px;
+    height: 295px;
+    padding:103px,179px; 
+    cursor: pointer;
+    transition: ease-out 0.6s;
+}
+.videoCard03:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: translateY(50px);
+    mix-blend-mode: luminosity;
+   
+}
+.liveVideoWrapperBottom{
+    display: flex;
+    flex-direction: column;
+    row-gap: 60PX;
+}
+.matchShedualCardTopWrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap:80px ;
+    align-items: center;
+    justify-content: space-evenly;
+    cursor: pointer;
+}
+.previusMatch{
+    font-family: Barlow Condensed;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 5px;
+    word-spacing: 10px;
+    color: var(--font-color);
+    text-align: center;
+    padding: 61px 0px 50px 0px;
+}
+.teamLogo{
+    width: 100px;
+    ;
+}
+.matchShedualCardLeft{
+    max-width: 426px;
+    padding: 10px 60px 10px 2px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    column-gap: 121px;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+    clip-path: polygon(
+      0 0%,
+      100% 0%,
+      100% 0%,
+      90% 100%,
+      0% 100%,
+      0% 0%,
+      0% 0%
+    );
+}
+    
+.teamName{
+    font-family: Barlow Condensed;
+    font-size: 32px;
+    font-weight: 500;
+    line-height: 38.4px;
+    letter-spacing: 3%;
+    color: var(--font-color);
+}
+
+.matchTime{
+    max-width: 84px;
+    font-family: Oswald;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 59.28px;
+    letter-spacing: 15%;
+    color: var(--font-color);
+}
+.matchShedualCardBottomWrapper{
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    column-gap:80px ;
+    align-items: center;
+    justify-content: space-evenly;
+
+}
+.matchShedualCardBOttomRight{
+    max-width: 426px;
+    padding: 10px 2px 10px 50px;
+    background-color: #212121;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-evenly;
+    column-gap: 121px;
+    align-items: center;
+    position: relative;
+    clip-path: polygon(
+    
+        0 0%,
+        0% 0%,
+        100% 0%,
+        100% 100%,
+        100% 100%,
+        10% 100%,
+        0% 0%
+    );
+}
+
+/* --------------Live  Video style css seectiion-------------  */
+
+/* --------------Top Games style css seectiion-------------  */
+#topGames{
+    background-color: #191919;
+    padding: 100px 0px;
+}
+.topGameWrapper{
+    display: flex;
+    flex-direction: row;
+    column-gap: 19px;
+    padding-bottom: 100px;
+}
+
+.topGameItemWrapperCard{
+    max-width: 315px;
+    display: flex;
+    flex-direction: column;
+    background: transparent;
+    transition: all linear .8s;
+    cursor: pointer;
+    position: relative;
+    margin-bottom: 50px;
+
+}
+.topGameItemWrapperCard:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    transform: scale(1.1);
+    
+}
+.topGameItemWrapperCard:hover .cardContent{
+    opacity: 1;
+    transform: translateY(430px);
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;}
+  
+
+.cardContent{
+    transform: translateY(100px);
+    width: 100%;
+    position: absolute;
+    padding-bottom: 10px;
+    opacity: 0;
+    background-color: #191919;
+    color: var(--font-color);
+    transition: ease-out .8s;
+   
+}
+.topGameItemWrapperCard:hover .plusIcon{
+    opacity: 0;
+   
+}
+.plusIcon:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ 
+}
+.plusIcon{
+  opacity: 1;
+  color: white;
+  font-size: 30px;
+  position: absolute;
+  right: 30px;
+  top: 30px;
+  background-color: #121212;
+  border-radius: 50%;
+  transition: ease-out .8s;
+}
+ 
+.cardContent__Title{
+    font-family: Barlow Condensed;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.4px;
+    word-spacing:8px; 
+    color: var(--font-color);
+    padding: 5px;
+}
+.cardContent__Summary{
+    font-family:Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.71px;
+    letter-spacing: 10%;
+    word-spacing:8px; 
+    color: #666666;
+    padding: 5px;
+}
+.cardContentOffer{
+    padding: 5px;
+    font-family:Oswald;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20.75px;
+    word-spacing:8px; 
+    color: var(--font-color);
+}
+.offer{
+   padding: 5px;
+   background-color: #FF4655;
+}
+.oldPrice{
+    color:#666666;
+   
+}
+
+
+/* bottom part  */
+.WrapperBottomtitle{
+    font-family:Oswald;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 24px;
+    word-spacing:8px; 
+    color: var(--font-color);
+    margin-bottom: 30px;
+}
+.WrapperBottomLeft{
+    max-width: 603px;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+
+}
+.WrapperBottomLeft__intro{
+   
+    font-family:Oswald;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.71px;
+    word-spacing:8px; 
+    letter-spacing: 10%;
+    color: #FF4655; 
+}
+.WrapperBottomLeft__summary{
+    color: #666666;
+}
+.WrapperBottomLeft__Btn{
+    padding: 13px 31px;
+    background: var(--bg-color);
+    color: var(--font-color);
+    font-family:Oswald;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 23.71px;
+    border: none;
+    cursor: pointer;
+    max-width: 128px;
+    transition: all linear .6s;
+}
+.WrapperBottomLeft__Btn:hover{
+    border-top-left-radius: 90px 50px;
+    border-bottom-right-radius: 90px 50px;
+    background-color: red;
+    color: white;
+}
+.topGameWrapperBottom{
+    display: flex;
+    flex-direction: row;
+    column-gap:134px ;
+    background-color: #212121;
+    padding: 60px 111px 45px 45px;
+   
+}
+.WrapperBottomRight{
+    max-width: 426px;
+    max-height: 370px;
+    position: relative;
+    cursor: pointer;
+
+}
+
+.secondLayer__01{
+    position: absolute;
+    right: 32px;
+    top: -19px;
+    max-width: 219.34px;
+    max-height: 330px;
+
+}
+.secondLayer__02{
+    position: absolute;
+    left: 32px;
+    top: -19px;
+    max-width: 219.34px;
+    max-height: 330px;
+
+}
+
+.thirdLayer__01{
+    width:258.33px ;
+    height: 370px;
+    position: absolute;
+    left: 85px;
+    top:-35px;
+    
+
+}
+    
+/* --------------Top Games style css seectiion-------------  */
