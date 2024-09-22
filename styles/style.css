@@ -939,7 +939,7 @@ i{
 }
 
 .teamContentBtn{
-    max-width: 105px;
+    width: 110px;
     background-color: #FF4655;
     padding: 8px 19px;
 }
