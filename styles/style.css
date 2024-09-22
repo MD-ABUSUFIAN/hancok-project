@@ -95,6 +95,11 @@ i{
     font-weight: 400;
     line-height: 23.71px;
     color: #DDDDDD;
+    transition: all ease-out 0.4s;
+}
+.navBarWrapperLeft__ul a:hover{
+    
+    color: #FF4655;
 }
 .navBarWrapperRight{
     display: flex;
@@ -762,3 +767,434 @@ i{
 }
     
 /* --------------Top Games style css seectiion-------------  */
+
+/* --------------Gamings Acccesoris style css seectiion-------------  */
+#gamingAccesories{
+    padding: 100px 0px;
+    background-color: var(--bg-color);
+}
+.gamingAccesoriesWrapper{
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    column-gap: 20px;
+    justify-content: center;
+    align-items: center;
+}
+.gamingAccesoriesCard{
+   
+    padding:23px 38px;
+    max-width: 315px;
+    background-color: rgb(33,33,33);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    row-gap: 10px;
+    cursor: pointer;
+    transition: all linear .4s;
+    
+}
+.gamingAccesoriesCard:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+ 
+}
+.gamingAccesoriesImage{
+    max-width: 240px;
+    max-height: 240px;
+}
+.gamingAccesoriesContent{
+    max-width: 184px;
+}
+.ProductPrice{
+    font-family:Oswald;
+    font-size: 40px;
+    font-weight: 500;
+    line-height: 59.28px;
+    letter-spacing: 1%;
+    color: var(--font-color);
+}
+.productTitle{
+    padding-top: 45px;
+    font-family:Oswald;
+    font-size: 25px;
+    font-weight: 600;
+    line-height: 37.05px;
+    color: var(--font-color);
+}
+.productAdd{
+    text-transform: capitalize;
+    padding-top: 7px;
+    color: #FF4655;
+    text-align: center;
+}
+.left{
+    position: absolute;
+    left: -25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:#FF4655;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    transition: all ease-in-out .5s;
+}
+.right{
+    position: absolute;
+    right: -25px;
+    display: block;
+    width: 50px;
+    height: 50px;
+    background-color:#FF4655;
+    border-radius: 50%;
+    text-align: center;
+    line-height: 50px;
+    color: var(--font-color);
+    border: 1px solid var(--font-color);
+    transition: all ease-in-out .5s;
+}
+.right:hover{
+    background-color: white;
+    border: 1px solid #FF4655 ;
+    color: #FF4655;
+}
+.left:hover{
+    background-color: white;
+    border: 1px solid #FF4655 ;
+    color: #FF4655;
+}
+
+/* --------------Gamings Acccesoris style css seectiion-------------  */
+
+/* --------------Team style css seectiion-------------  */
+#team{
+    padding: 100px 0px;
+    background-color: #191919;
+}
+.modifiedContentHeading{
+    width: 500px;
+}
+.teamWrapper{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+.teamContent__Title{
+    font-family:Oswald;
+    font-size: 30px;
+    font-weight: 600;
+    line-height: 36px;
+    word-spacing: 8px;
+    color: var(--font-color);
+}
+.teamCard{
+    max-width: 650px;
+    overflow: hidden;
+    position: relative;
+}
+.teamCard:hover{
+    box-shadow: rgba(255, 255, 255, 0.979) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    cursor: pointer;
+}
+.teamCard:hover .teamContetHover{
+    opacity: 1;
+    transform: translateY(-200px);
+}
+.teamCard:hover .teamContentBottom{
+    opacity: 0;
+    transform: translateY(-433px);
+}
+.teamContetHover{
+    width: 100%;
+    padding: 35px;
+    background-color: #21212175;
+    display: flex;
+    flex-direction: column;
+    row-gap: 20px;
+    position: absolute;
+    opacity: 0;
+    transition: all linear .5s;
+}
+.teamContentHoverTop{
+    max-width: 300px;
+}
+.teamContentBottom{
+    position: absolute;
+    width: 100%;
+    padding: 26px 0px 26px 30px;
+    background-color: #21212175;
+    transform: translateY(-92px);
+    opacity: 1;
+    transition: all linear .5s;
+
+}
+.teamContentHoverBottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.teamContentBtn{
+    max-width: 105px;
+    background-color: #FF4655;
+    padding: 8px 19px;
+}
+.socialIcon{
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    background-color: #FF4655;
+    color: white;
+    border: 1px solid #FF4655;
+    text-align: center;
+    line-height: 35px;
+    margin-right: 20px;
+    transition: all linear .3s;
+}
+.socialIcon:hover{
+    background-color: #ffffff;
+    color: rgb(113, 0, 219);
+    border: 1px solid #FF4655;
+    transform: translateY(-10px);
+}
+
+/* --------------Team style css seectiion-------------  */
+/* --------------Question style css seectiion-------------  */
+#question{
+    padding: 55px 0px 200px 0px;
+    background-color: #121212;
+    
+}
+.questionTitle{
+    margin-bottom: 92px;
+}
+.questionWrapper{
+    max-width: 661px;
+    display: grid;
+    grid-template-columns: repeat(2 , 1fr);
+    
+    
+}
+.questionWrapperBox{
+    padding: 0px 121px 75px 0px;
+    border-right: 1px solid #666666;
+    border-bottom: 1px solid #666666;
+    display: flex;
+    flex-direction: row;
+    column-gap: 42px;
+    transition: all linear .6s;
+}
+.modifed-03{
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 75px;
+}
+
+.questionWrapperBox2{
+    padding: 0px 0px 75px 121px;
+    border-bottom: 1px solid #666666;
+    display: flex;
+    flex-direction: row;
+    column-gap: 42px;
+    transition: all linear .6s;
+}
+.questionWrapperBox:hover{
+    background-color: rgba(137, 43, 226, 0.199);
+    cursor: pointer;
+}
+.questionWrapperBox2:hover{
+    background-color: rgba(137, 43, 226, 0.199);
+    cursor: pointer;
+}
+.modifed-04{
+    border-bottom: none;
+    padding-bottom: 0px;
+    padding-top: 75px;
+}
+.questionWrapperBoxLeft{
+    display: inline-block;
+    width: 70px;
+    height: 70px;
+    background-color: #FF4655;
+}
+.questionWrapperBoxLeft__Number{
+    font-family:Barlow Condensed;
+    font-size: 38px;
+    font-weight: 600;
+    letter-spacing: 10%;
+    text-align: center;
+    line-height: 70px;
+    color: var(--font-color);
+}
+.questionWrapperBoxRight{
+    width:427px;
+}
+.questionWrapperBoxRight__title{
+    font-family:Barlow Condensed;
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 26.4px;
+    color: #FF4655;
+}
+.modifiedSummary{
+    color: #666666;
+}
+/* --------------Question style css seectiion-------------  */
+
+/* --------------Footer style css seectiion-------------  */
+footer{
+    background-color: #191919;
+    height: 500px;
+    padding: 112px 0px;
+   
+}
+.footerWrapper{
+    position: relative;
+}
+.footerWraperTop{
+    background-color: #FF4655;
+    padding: 35px 30px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    position: absolute;
+    top: -185px;
+}
+.footerWraperTop__heading{
+    text-transform: uppercase;
+    max-width: 725px;
+    font-family:Barlow Condensed;
+    font-size: 40px;
+    font-weight: 600;
+    line-height: 48px;
+    color: var(--font-color);
+}
+.footerWrapperTopSearch{
+    position: relative;
+    
+}
+.footerWrapperBottom{
+    padding-top: 50px;
+    display: flex;
+    flex-direction: row;
+    row-gap: 107px;
+    justify-content: space-between;
+   
+}
+.searchBar{
+    font-family:Barlow Condensed;
+    width: 409px;
+    font-size: 16px;
+    border-radius: 30px;
+    padding: 10px 0px 10px 20px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    
+}
+.searchBarBtn{
+    font-family:Barlow Condensed;
+    width: 117px;
+    padding: 10px 28px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 19.2px;
+    border-radius: 30px;
+    background-color: #191919;
+    color: var(--font-color);
+    border: none;
+    cursor: pointer;
+    position:absolute;
+    right:-1px;
+    transition: all linear .4s;
+}
+.searchBarBtn:hover{
+    background-color: blueviolet;
+}
+.footerWrapperLeft{
+    display: flex;
+    flex-direction: column;
+    row-gap: 35px;
+}
+.footerLeftLogo{
+
+    display: block;
+    max-width: 124.2px;
+    position: relative
+}
+.footer__summary{
+    text-transform: uppercase;
+    max-width: 451px;
+    color: #666666;
+}
+.modified_social_icon{
+    background-color: #212529;
+    color: white;
+    border: 1px solid #212529 ;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    font-size: 25.01px;
+}
+.modified_social_icon:hover{
+    background-color: #FF4655;
+    color: white;
+}
+.footerWrapperMiddle{
+    
+    display: flex;
+    flex-direction: row;
+    column-gap: 132px;
+}
+
+.footerLinkTitle{
+    font-family:Barlow Condensed;
+    font-size: 25px;
+    font-weight: 500;
+    line-height: 30px;
+    letter-spacing: 7%;
+    padding-bottom: 20px;
+    color: var(--font-color);
+}
+.footer__Link{
+    font-family:Oswald;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 23.71px;
+    color: #666666;
+    margin-bottom: 20px;
+    transition: all ease-out .5s;
+}
+.footer__Link:hover{
+    color: #FF4655;
+}
+.footerWrapperRightImage{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+.footerGelary__Image{
+    display: inline-block;
+    max-width: 102px;
+}
+.copyRight{
+    font-family:Barlow Condensed;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    color: var(--font-color);
+    text-align: center;
+    width: 100%;
+    padding: 25px 0px;
+    background-color: #191919;
+    border-top: 2px solid #666666;
+
+}
+.copyRight>span{
+    color: #FF4655;
+}
+/* --------------Footer style css seectiion-------------  */
