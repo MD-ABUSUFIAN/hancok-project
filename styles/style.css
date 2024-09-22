@@ -116,7 +116,7 @@ i{
 
 /* --------------Banner style css seectiion-------------  */
 #banner{
-    background: url(/images/banner/banner\ 1\ \(1\).png);
+    background: url(../images/banner/banner\ 1\ \(1\).png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -380,7 +380,7 @@ i{
     align-items: center;
 }
 .videoCard01{
-    background: url(/images/liveVideo/tour-1\ 1.png);
+    background: url(../images/liveVideo/tour-1\ 1.png);
     width: 426px;
     height: 295px;
     padding:103px,179px; 
@@ -430,7 +430,7 @@ i{
     border-radius: 50%;
 }
 .videoCard02{
-    background: url(/images/liveVideo/tour-2\ 1.png);
+    background: url(../images/liveVideo/tour-2\ 1.png);
     width: 426px;
     height: 295px;
     padding:103px,179px; 
@@ -449,7 +449,7 @@ i{
    
 }
 .videoCard03{
-    background: url(/images/liveVideo/tour-3\ 1.png);
+    background: url(../images/liveVideo/tour-3\ 1.png);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
