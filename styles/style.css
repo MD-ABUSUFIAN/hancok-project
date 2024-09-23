@@ -247,6 +247,11 @@ i{
     display: inline-block;
     max-width: 708px;
     border-radius: 0px, 0px, 65px, 0px;
+    cursor: pointer;
+    transition: all linear .6s;
+}
+.communityWrapperLeftImg:hover{
+    transform: scale(1.1);
 }
 .communityWrapperMiddle{
    
@@ -256,7 +261,6 @@ i{
     flex-direction: row;
     column-gap: 82px;
     
-  
 }
 .communityWrapperRight__title{
     font-family: Oswald;
@@ -298,6 +302,12 @@ i{
     border-radius: 0px, 50px, 0px, 50px;
     border-top-right-radius:  50px;
     border-bottom-left-radius:  50px;
+    transition: all ease .7s;
+    cursor: pointer;
+}
+.communityWrapperBottomCard:hover{
+    background-color: rgba(137, 43, 226, 0.574);
+    
 }
 .communityWrapperBottomCard__title{
     font-family: Barlow Condensed;
@@ -533,6 +543,7 @@ i{
     justify-content:space-evenly;
     column-gap: 121px;
     align-items: center;
+    transition: all linear 0.8s;
     clip-path: polygon(
       0 0%,
       100% 0%,
@@ -542,6 +553,10 @@ i{
       0% 0%,
       0% 0%
     );
+}
+.matchShedualCardLeft:hover{
+    background-color: rgba(137, 43, 226, 0.574);
+    transform: scale(1.1);
 }
     
 .teamName{
@@ -580,7 +595,8 @@ i{
     justify-content:space-evenly;
     column-gap: 121px;
     align-items: center;
-    /* position: relative; */
+    transition: all linear 0.8s;
+    cursor: pointer;
     clip-path: polygon(
     
         0 0%,
@@ -591,6 +607,10 @@ i{
         10% 100%,
         0% 0%
     );
+}
+.matchShedualCardBOttomRight:hover{
+    background-color: rgba(137, 43, 226, 0.574);
+    transform: scale(1.1);
 }
 
 /* --------------Live  Video style css seectiion-------------  */
@@ -758,7 +778,10 @@ i{
     max-height: 370px;
     position: relative;
     cursor: pointer;
-
+    transition: all linear .7s;
+}
+.WrapperBottomRight:hover{
+    transform: scale(1.1);
 }
 
 .secondLayer__01{
@@ -938,7 +961,7 @@ i{
     row-gap: 20px;
     position: absolute;
     opacity: 0;
-    transition: all linear .5s;
+    transition: all ease-in .8s;
 }
 .teamContentHoverTop{
     max-width: 300px;
